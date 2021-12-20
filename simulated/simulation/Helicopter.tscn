@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Helicopter_obj/Helicopter/Helicopter.FBX" type="PackedScene" id=1]
+[ext_resource path="res://Helicopter.gd" type="Script" id=2]
+
+[node name="Helicopter" instance=ExtResource( 1 )]
+transform = Transform( 100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0 )
+script = ExtResource( 2 )
+path = NodePath("RootNode/Heli10/Model/Rotor/RotorTurn/Pale1")
+
+[node name="Pale1" parent="RootNode/Heli10/Model/Rotor/RotorTurn" index="0"]
+transform = Transform( -0.228351, -2.3098e-09, -0.973579, -1.9963e-08, 1, 2.3098e-09, 0.973579, 1.9963e-08, -0.228351, -0.040954, 0.002002, 0.0781213 )
+layers = 2
